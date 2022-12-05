@@ -9,7 +9,7 @@ const homeRouter = require('./Temps/home_router')
 const createRouter = require('./Temps/create_router')
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const cors = require('cors')
 
 app.use(express.json());
