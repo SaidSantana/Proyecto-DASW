@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+        <head>
+        <title>Jeopardy</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel = "stylesheet" href = "../Styles.css">
+        </head>
+        <body>
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <!--Barra superior-->
+            <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId" style = "padding-left: 305px;">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style = "padding-top: 20px; padding-bottom: 20px;">
+                        <li class="nav-item active" >
+                            <a style = "padding-left: 35px;" href = "Home.html"><i class="fa fa-home" aria-hidden="true" icon = "top"></i><span class = "textoTop"> Inicio</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a style = "padding-left: 35px;" href = "CreateGame.html"><i class="fa fa-gamepad" aria-hidden="true"icon = "top"></i><span class = "textoTop"> Jugar</span></a>
+                        </li>
+
+                        
+                        <li class="nav-item">
+                            <a class="nav-link"></a>
+                        </li>
+                    </ul>
+
+                    <div class = "cuenta" style = "margin-right: 15%;">
+                        <a  data-toggle="modal" data-target="#modalSesion">
+                            <i class="fa fa-user-circle" aria-hidden="true" icon = "top" style = "font-size: 25px;"></i>
+                            <span class = "textoTop" style = "margin-left: 20px;" id = "ArribaDerecha">Iniciar sesion</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <!---->
+
+            <!--Botones-->
+           <div class="bottons">
+            
+            <a href = "CreateGame.html">
+                <div class="botones" style = "background: #2196f3;">
+                    <div class = "textoBotones" >Crear Juego   <span><i class="fa fa-pencil" aria-hidden="true"></i></span></div>
+                </div>
+            </a>
+
+            <a href = "Jugar.html">
+                <div class="botones" style = "background: #0bb859;" >
+                    <div class = "textoBotones">Jugar   <span><i class="fa fa-gamepad" aria-hidden="true"></i></span></div>
+                </div>
+            </a>
+
+            <a data-toggle="modal" data-target="#ModalQuestion">
+                <div class="botones" style = "background: #ddc80d;" >
+                    <div class = "textoBotones">Publicar pregunta   <span><i class="fa fa-question" aria-hidden="true"></i></span></div>
+                </div>
+            </a>
+
+            
+           </div>
+           <!---->
+
+           <!--Pregunta del dia-->
+
+           <div class="PreguntaDeldia">
+                <div class="rectangulo">
+                    <i class="fa fa-calendar" aria-hidden="true"></i><span>Pregunta del día</span>
+                </div>
+                <div class="textoPregunta" ><i class="fa fa-bolt" aria-hidden="true" style = "color:#ffff00"></i><p id = "ask"></p></div>
+                <div class="respuesta"><span><i class="fa fa-bolt" aria-hidden="true" style = "color:#ffff00"></i></span>
+                    <input class = "campo" placeholder="Respuesta" id = "campoPD">
+                </div>
+           </div>
+
+           <div class = "perfil">
+            <div class="Big-Container">
+                <div class="rectangle-profile">
+                    <div class = "profile-image">
+                        <a href = "../Multimedia/MiniDiego.jpg"><img src="../Multimedia/MiniDiego.jpg" alt="" class = "imagen"></a>
+                    </div>
+                    <div class = "textoBotones" id = "UserName">*Username*</div>
+                </div>
+        
+                <div class="datos" >
+                    <table id = "tablePerfil">
+                        <th style = "height: 25px;">Data</th>
+                        <th style = "height: 25px;"></th>
+        
+                        <tr>
+                            <td>Age: </td>
+                            <td id = "EdadRegistrada">*Login to se your stats*</td>
+                        </tr>
+        
+                        <tr>
+                            <td>E-mail: </td>
+                            <td id = "correoRegistrado">*Login to se your stats*</td>
+                        </tr>
+        
+                        
+                    </table>
+                </div>
+            </div>
+           </div>
+
+           <!---->
+
+           <!--Modales de inicio de sesion-->
+           <form>
+            <div class="modal fade" id="modalSesion" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Ingresar</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+        
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="Correo">Correo</label>
+                                <div class = "input-group">
+                                    <input type="email" class="form-control" name="" id="Correo" placeholder="Ingresa tu correo">
+                                    <div class = "input-group-append">
+                                        <span class = "input-group-text">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="PSW">Password</label>
+                                <div class = "input-group">
+                                    <input type="password" class="form-control" name="" id="PSW" placeholder="Ingresa tu contraseña">
+                                    <div class = "input-group-append">
+                                        <span class = "input-group-text">
+                                            <i class = "fa fa-key"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+        
+                            <div class = "boton">
+                                <button id = "InitSesion" type="button" class="btn btn-primary" style = "background-color: rgb(70, 153, 22); width: 300px;">Login</button>
+                            </div>
+    
+        
+                        </div>
+        
+                        <div class="modal-footer">No tienes cuenta!<a href = "#" data-dismiss = "modal" data-toggle="modal" data-target="#modelIdR"> Registrate aqui</a></div>
+        
+                        
+                    </div>
+                </div>
+            </div>
+        </form>
+
+            <!-- Modal de registro -->
+            <div class="modal fade" id="modelIdR" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="false">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Registrar usuario</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id = "Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class = "row">
+                                    <div class = "col-6">
+                                        <input type="text" class="form-control" name="" id="Nombre" placeholder="Nombre(s)" required vaciado = "vc" >
+                                    </div>
+            
+                                    <div class = "col-6">
+                                        <input type="text" class="form-control" name="" id="Username" placeholder="Username" required vaciado = "vc">
+                                    </div> 
+                                </div>
+                                
+                                <input type="email" class="form-control mt-3" name="" id="CorreoR" placeholder="Tu correo" required vaciado = "vc">
+                                <input type="password" class="form-control mt-3" name="" id="PSWR" placeholder="Contraseña" required pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]*" minlength="6" vaciado = "vc">
+                                <input type="password" class="form-control mt-3" name="" id="PSWRC" placeholder="Confirmar Contraseña" required pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]*" minlength="6" vaciado = "vc">
+                                <input type = "number" class="form-control mt-3" name="" id="age" placeholder="Edad" vaciado = "vc">
+        
+                            </form>
+                        
+                            <div class = "boton" style = "padding-top: 10px;">
+                                <button id = "RegistroB" type="submit" data-dismiss = "modal" class="btn btn-primary" style = "background-color: rgb(70, 153, 22); width: 300px; ">Registrarse</button>
+                            </div>
+                            
+                            
+                        </div>      
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal de pregunta -->
+
+            <!-- Button trigger modal -->
+            
+            <!-- Modal -->
+            <form>
+                <div class="modal fade" id="ModalQuestion" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Publica pregunta</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                            </div>
+            
+                            <div class="modal-body">
+
+                                <div class="form-group">
+                                    <label for="PSW">Categoria</label>
+                                    <div class = "input-group">
+                                        <input type="text" class="form-control" name="" id="TopicModal" placeholder="Categoria">
+                                        <div class = "input-group-append">
+                                            <span class = "input-group-text">
+                                                <i class="fa fa-book" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <label for="Correo">Pregunta</label>
+                                    <div class = "input-group">
+                                        <input type="text" class="form-control" name="" id="PreguntaModal" placeholder="Pregunta">
+                                        <div class = "input-group-append">
+                                            <span class = "input-group-text">
+                                                <i class="fa fa-question" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+            
+                                <div class="form-group">
+                                    <label for="PSW">Respuesta</label>
+                                    <div class = "input-group">
+                                        <input type="text" class="form-control" name="" id="RespuestaModal" placeholder="Respuesta">
+                                        <div class = "input-group-append">
+                                            <span class = "input-group-text">
+                                                <i class = "fa fa-key"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                
+            
+                                <div class = "boton">
+                                    <button id = "Publish" type="sumbit" class="btn btn-primary" style = "background-color: rgb(70, 153, 22); width: 300px;">Publicar</button>
+                                </div>
+        
+            
+                            </div>
+            
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+           <!--Juegos de la -->
+            <script src = "../Home/perfil.js"></script>
+            <script src = '../Home/ajax_Home.js'></script>
+           <script src = "../Home/home.js"></script>
+           <script src = '../Home/PublicarPregunta/Publicar_DOM.js'></script>
+           <!--<script type = "module" src = "../Clases/LogAnReg/Register.js" ></script>-->
+           
+        </body>
+</html>

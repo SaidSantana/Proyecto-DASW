@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Crear Juego</title>
+    <link rel = "stylesheet" href = "Styles.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "../Styles.css">
+
+    <!-- Barra superior -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId" style = "padding-left: 305px;">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style = "padding-top: 20px; padding-bottom: 20px;">
+                <li class="nav-item active" >
+                    <a style = "padding-left: 35px;" href = "Home.html"><i class="fa fa-home" aria-hidden="true" icon = "top"></i><span class = "textoTop"> Inicio</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a style = "padding-left: 35px;" href = "CreateGame.html"><i class="fa fa-gamepad" aria-hidden="true"icon = "top"></i><span class = "textoTop"> Jugar</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a style = "padding-left: 35px;" ><i class="fa fa-user" aria-hidden="true" icon = "top"></i><span class = "textoTop"> Mi perfil</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!---->
+
+
+    <!-- Registro en caso de no estar registrado-->
+    <div class="Big-Container" id = "notsee">
+        <div class="ModulContainer">
+            <div class="titulo">Register </div>
+            <hr class = "linea" color = "gray"> 
+    
+            <input type = "name" class = "Entrada" placeholder="Name(s)" style = "width: 45%;">
+            <span><input type = "text" class = "Entrada" placeholder="Last Name" style = "width: 45%;"></span>
+    
+            
+            <input type = "email" class = "Entrada" placeholder="E-mail">
+            <input type = "password" class = "Entrada" placeholder="Password">
+            <input type = "password" class = "Entrada" placeholder="Confirm password">
+            <input type = "text" class = "Entrada" placeholder="NameTag" max="10">
+            <input type="number" id="points" name="points" step="1" class = "Entrada"placeholder="5" style = "width: 25%;" min="5" max = "99">
+
+            <div>
+                <button type = "button" class = "Boton" style = "background-color: #3BB308;">Register</button>
+            </div>
+
+        </div>
+    
+        <div class="ModulContainer">
+            <div class="titulo">Log-In</div>
+            <hr class = "linea" color="gray">
+
+            <input type="email" class = "Entrada" placeholder="E-mail">
+            <input type = "password" class = "Entrada" placeholder="Password">
+
+            <div>
+                <button type = "button" class = "Boton" style = "background-color: #1B30AE;">Log-In</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="Big-Container">
+        <div class="rectangle-profile">
+            <div class = "profile-image">
+                <a href = "../Multimedia/MiniDiego.jpg"><img src="../Multimedia/MiniDiego.jpg" alt="" class = "imagen"></a>
+            </div>
+            <div class = "textoBotones" id = "UserName">Diegordo17</div>
+        </div>
+
+        <div class="datos">
+            <table id = "tablePerfil">
+                <th style = "height: 25px;">Data</th>
+                <th style = "height: 25px;"></th>
+
+                <tr>
+                    <td>Age: </td>
+                    <td>20</td>
+                </tr>
+
+                <tr>
+                    <td>E-mail: </td>
+                    <td>diegosolorzano608@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <td>Games played: </td>
+                    <td>12</td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.4",
+    "requirejs": "^2.3.6"
+  },
+  "name": "clases",
+  "version": "1.0.0",
+  "description": "Paquete",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diego Solorzano",
+  "license": "ISC"
+}

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Crear Juego</title>
+    <link rel="stylesheet" href="../Styles.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+   
+    <!-- Barra superior -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId" style="padding-left: 305px;">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="padding-top: 20px; padding-bottom: 20px;">
+                <li class="nav-item active">
+                    <a style="padding-left: 35px;" href="Home.html"><i class="fa fa-home" aria-hidden="true"
+                            icon="top"></i><span class="textoTop"> Inicio</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a style="padding-left: 35px;"><i class="fa fa-gamepad" aria-hidden="true" icon="top"></i><span
+                            class="textoTop"> Jugar</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a style="padding-left: 35px;" href="MiPerfil.html"><i class="fa fa-user" aria-hidden="true"
+                            icon="top"></i><span class="textoTop"> Mi perfil</span></a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Parte superior del gamescree-->
+    <div class = "superiorGame">
+        <h1 class="display-3">Juego de Prueba</h1>
+
+    <div class="form-group">
+        <label for="">Título</label>
+        <input type="text" class="form-control" name="" id="titleInput" aria-describedby="helpId"
+            placeholder="Título del juego">
+    </div>
+
+
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="">Columnas</label>
+                <input type="number" class="form-control" min="2" max="4" name="" id="colsInput" value="3"
+                    aria-describedby="helpId" placeholder="">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="">Filas</label>
+                <input type="number" class="form-control" min="2" max="4" name="" id="rowsInput" value="3"
+                    aria-describedby="helpId" placeholder="">
+            </div>
+        </div>
+    </div>
+
+    <a id="jsonGenerator" class="btn btn-primary disabled" href="#" role="button" data-toggle="modal"
+        data-target="#modalBoard">Generar JSON</a>
+
+    <a id="boardGenerator" class="btn btn-primary disabled" href="#" role="button">Generar tablero</a>
+    </div>
+
+    <!--Fin de la parte superior del gamscreen-->
+    <!--Parte de la tabla-->
+    <table class="table mt-3" style="text-align:center;" style="margin: 0 auto;" id = "gameTable" hidden>
+        <thead>
+            <tr>
+                <th>Valores </th>
+                <th><a href="#" data-toggle="modal" data-target="#modalBoard">Tema1</a></th>
+                <th><a href="#" data-toggle="modal" data-target="#modalBoard">Tema2</a></th>
+                <th><a href="#" data-toggle="modal" data-target="#modalBoard">Tema3</a></th>
+                <th><a href="#" data-toggle="modal" data-target="#modalBoard">Tema4</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">100</td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema1-100</a></td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema2-100</a></td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema3-100</a></td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema4-100</a></td>
+            </tr>
+            <tr>
+                <td scope="row">200</td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema1-200</a></td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema2-200</a></td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema3-200</a></td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema4-200</a></td>
+            </tr>
+            <tr>
+                <td scope="row">300</td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema1-300</a></td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema2-300</a></td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema3-300</a></td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema4-300</a></td>
+            </tr>
+            <tr>
+                <td scope="row">400</td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema1-400</a></td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema2-400</a></td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema3-400</a></td>
+                <td><a href="#" data-toggle="modal" data-target="#modalBoard">Pregunta:Tema4-400</a></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <div style = "margin-left: 45%; margin-top: 5%;">
+        <a id="saveGame" class="btn btn-primary disabled" href="#" role="button" style="background-color: green;">Guardar Juego</a>
+    </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalBoard" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Jeopardy Designer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="question">
+                            <p>Tema: <span id="modalTopic"></span> </p>
+                            <p>Valor: <span id="modalScore"></span> </p>
+                            <div class="form-group">
+                                <label for="">Pregunta: </label>
+                                <textarea class="form-control" name="" id="" rows="3"
+                                    placeholder="Escribe tu pregunta"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="answer" id = "Answer">
+                            <div class="form-group">
+                                <label for="">Respuesta: </label>
+                                <textarea class="form-control" name="" id="RespuestaText" rows="3"
+                                    placeholder="Escribe la respuesta"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="theme">
+                            <div class="form-group">
+                                <label for="">Tema</label>
+                                <input type="text" class="form-control" placeholder="temática">
+                            </div>
+                        </div>
+                        <div class="json">
+                            <div class="form-group">
+                                <label for="">JSON</label>
+                                <textarea class="form-control" name="" id="textJson" rows="3"
+                                    disabled="true">text</textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="btnSave" type="button" class="btn btn-primary" data-dismiss="modal">Guardar</button>
+                    <button id="btnClose" type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src = "../Clases/Preguntas.js"></script>
+    <script src = "../CrearJuego/admin2.js"></script>
+    <script src = ".././CrearJuego/ajax_handler_create.js"></script>
+    <script SRC = "../CrearJuego/index.js"></script>
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</body>
+
+</html>

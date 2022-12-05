@@ -1,0 +1,29 @@
+[{
+  "uuid": "Usuario1",
+  "name": "Diego",
+  "email": "diegosolorzano608@gmail.com",
+  "pass": "$2b$10$oWel9iIS6/bjDIA9T8iyRuwfRTX.g4f3o1p9NY2Wg0bXlzJAIuC.W",
+  "imageUrl": "foto",
+  "gamesPlayed": 0,
+  "age": 20,
+  "role": "ADMIN"
+},{
+  "uuid": "Usuario2",
+  "name": "Cornelius",
+  "email": "cornelius@hotMamis.com",
+  "pass": "$2b$10$XgvHRTesGQqLbSNCUJHAsuWClcTy/glnXyg17x2ANEVtfPDs7FDaK",
+  "imageUrl": "foto",
+  "gamesPlayed": 0,
+  "age": 30,
+  "role": "USER"
+},{
+  "uuid": "Usuario5",
+  "name": "Natalia",
+  "email": "Nataliass@gmail.com",
+  "pass": "$2b$10$Eq.2oGZR57hCMvsX60LTeO9TEUOn.ugl51Ne9Tcj9Jb..0fgMkeXS",
+  "imageUrl": "foto",
+  "gamesPlayed": 0,
+  "age": 22,
+  "token": "colaciones",
+  "role": "ADMIN"
+}]

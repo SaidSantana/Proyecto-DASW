@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jeopardy</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel = "stylesheet" href = "../Styles.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <!--Barra superior-->
+        <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId" style = "padding-left: 305px;">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style = "padding-top: 20px; padding-bottom: 20px;">
+                    <li class="nav-item active" >
+                        <a style = "padding-left: 35px;" href = "Home.html"><i class="fa fa-home" aria-hidden="true" icon = "top"></i><span class = "textoTop"> Inicio</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a style = "padding-left: 35px;" href = "CreateGame.html"><i class="fa fa-gamepad" aria-hidden="true"icon = "top"></i><span class = "textoTop"> Jugar</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a style = "padding-left: 35px;" href = "MiPerfil.html"><i class="fa fa-user" aria-hidden="true" icon = "top"></i><span class = "textoTop"> Mi perfil</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"></a>
+                    </li>
+                </ul>
+
+                
+            </div>
+        </nav>
+        <!---->
+
+        <div class = "title" id = "titleOfGame">Titulo del juego</div>
+
+       <div class = "center">
+        <table class="table mt-3" style="text-align:center;" style="margin: 0 auto;" id = "TableGame" >
+            <thead>
+                <tr>
+                    
+                    <th><a href="#" data-toggle="modal" data-target="#pregunta">Tema1</a></th>
+                    <th><a href="#" data-toggle="modal" data-target="#pregunta">Tema2</a></th>
+                    <th><a href="#" data-toggle="modal" data-target="#pregunta">Tema3</a></th>
+                    <th><a href="#" data-toggle="modal" data-target="#pregunta">Tema4</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                    <td><a href="#" >100</a></td>
+                    <td><a href="#" >100</a></td>
+                    <td><a href="#" >100</a></td>
+                    <td><a href="#" >100</a></td>
+                </tr>
+                <tr>
+                    
+                    <td><a href="#" >200</a></td>
+                    <td><a href="#" >200</a></td>
+                    <td><a href="#" >200</a></td>
+                    <td><a href="#" >200</a></td>
+                </tr>
+                <tr>
+                    
+                    <td><a href="#" >300</a></td>
+                    <td><a href="#" >300</a></td>
+                    <td><a href="#" >300</a></td>
+                    <td><a href="#" >300</a></td>
+                </tr>
+                <tr>
+                    
+                    <td><a href="#" >400</a></td>
+                    <td><a href="#" >400</a></td>
+                    <td><a href="#" >400</a></td>
+                    <td><a href="#" >400</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class = "ModalPregunta">
+            <div style = "margin-top: 5%;">
+                <h1 id = "topic" style = "margin-bottom: 5%; ">Topic</h1>
+                <hr style = "border: 1px solid #000000">
+            </div>
+
+            <div>
+                <i class="fa fa-bolt" aria-hidden="true"></i><span id = "pregu">
+                    ¿Qué día será mañana si lo preguntamos ayer?
+                </span>
+            </div>
+
+            <div id = "answerGame">
+                <input placeholder="Repuesta" id = "campoG">
+            </div>
+
+            <div>
+                Score: <span id = "Score">5</span>
+            </div>
+
+            <hr style = "border: 1px solid #000000; margin-top: 32%;">
+
+            <a href = "#">
+                <div id = "sumbitG">
+                Aceptar
+            </div></a>
+        </div>
+       </div>
+
+       <div class = "aceptarJuego" id = "aceptarJuego">
+        <a href = "#" id = "enlace">Terminar</a>
+       </div>
+
+       <script src = '../zDomCalls/ajax_handler.js'></script>
+       <script src = '../zDomCalls/index.js'></script>
+    
+    </body>
+</html>
