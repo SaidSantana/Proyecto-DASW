@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt');
-const { use } = require('../../Server/Temps/home_router');
+const { use } = require('../Temps/home_router');
 
 let mongoDB ='mongodb://127.0.0.1:27017/EjemploDB';
 let options = {useNewUrlParser:true, useUnifiedTopology: true}
