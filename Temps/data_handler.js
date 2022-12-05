@@ -1,7 +1,7 @@
 const { randomInt, createSecretKey } = require("crypto")
-const User = require('../../Clases/SchemasMongo/UserSchema')
-const Ask = require('../../Clases/SchemasMongo/QuestionSchema')
-const Game = require('../../Clases/SchemasMongo/GameSchema')
+const User = require('../SchemasMongo/UserSchema')
+const Ask = require('../SchemasMongo/QuestionSchema')
+const Game = require('../SchemasMongo/GameSchema')
 
 function login(req, res){
     let email = req.body.email
